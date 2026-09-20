@@ -1,0 +1,19 @@
+{
+  "schema_version": "edit-decisions-v0.1",
+  "sop_version": "talking-head-v0.1",
+  "media_id": "sample_001",
+  "summary": {"delete_count": 1, "review_count": 0},
+  "decisions": [
+    {
+      "decision_id": "d001",
+      "action": "delete",
+      "category": "mistake_retake",
+      "start_word_id": "w000002",
+      "end_word_id": "w000006",
+      "content": "今天我们训练肩膀，不对",
+      "reason": "错误表达后立即重新说出正确版本",
+      "confidence": 0.97,
+      "evidence": ["出现明确的自我纠正词“不对”"]
+    }
+  ]
+}

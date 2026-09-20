@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sop_version", "media_id", "summary", "decisions"],
+  "properties": {
+    "schema_version": {"const": "edit-decisions-v0.1"},
+    "sop_version": {"const": "talking-head-v0.1"},
+    "media_id": {"type": "string"},
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["delete_count", "review_count"],
+      "properties": {
+        "delete_count": {"type": "integer", "minimum": 0},
+        "review_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["decision_id", "action", "category", "start_word_id", "end_word_id", "content", "reason", "confidence", "evidence"],
+        "properties": {
+          "decision_id": {"type": "string"},
+          "action": {"enum": ["delete", "keep", "review"]},
+          "category": {"enum": ["pre_roll", "post_roll", "mistake", "mistake_retake", "abandoned_sentence", "exact_repetition", "interruption", "technical_direction", "irrelevant_exchange", "empty_pause", "filler_word", "possible_tangent", "protected_pause", "other"]},
+          "start_word_id": {"type": "string"},
+          "end_word_id": {"type": "string"},
+          "content": {"type": "string"},
+          "reason": {"type": "string"},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "evidence": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

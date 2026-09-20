@@ -1,0 +1,27 @@
+{
+  "segments": [
+    {
+      "text": "大家好，今天我们训练肩膀，不对，是训练胸部。",
+      "words": [
+        {"word": "大家好", "start": 0.50, "end": 0.90, "probability": 0.99},
+        {"word": "今天", "start": 1.00, "end": 1.30, "probability": 0.99},
+        {"word": "我们", "start": 1.35, "end": 1.60, "probability": 0.99},
+        {"word": "训练", "start": 1.65, "end": 1.95, "probability": 0.99},
+        {"word": "肩膀", "start": 2.00, "end": 2.35, "probability": 0.98},
+        {"word": "不对", "start": 2.45, "end": 2.75, "probability": 0.99},
+        {"word": "是", "start": 3.10, "end": 3.20, "probability": 0.99},
+        {"word": "训练", "start": 3.25, "end": 3.55, "probability": 0.99},
+        {"word": "胸部", "start": 3.60, "end": 3.95, "probability": 0.99}
+      ]
+    },
+    {
+      "text": "这个动作要保持稳定。",
+      "words": [
+        {"word": "这个动作", "start": 5.10, "end": 5.65, "probability": 0.99},
+        {"word": "要", "start": 5.70, "end": 5.80, "probability": 0.99},
+        {"word": "保持", "start": 5.85, "end": 6.10, "probability": 0.99},
+        {"word": "稳定", "start": 6.15, "end": 6.55, "probability": 0.99}
+      ]
+    }
+  ]
+}

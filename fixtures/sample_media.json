@@ -1,0 +1,10 @@
+{
+  "media_id": "sample_001",
+  "filename": "sample.mp4",
+  "fps": 50,
+  "total_frames": 500,
+  "duration_seconds": 10.0,
+  "start_timecode": "00:00:00:00",
+  "language": "zh-CN",
+  "content_type": "single_speaker_talking_head"
+}

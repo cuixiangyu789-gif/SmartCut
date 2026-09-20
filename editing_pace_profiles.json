@@ -1,0 +1,32 @@
+{
+  "default_profile": "compact",
+  "profiles": {
+    "natural": {
+      "max_sentence_gap_frames": 15,
+      "join_handle_seconds": 0.30,
+      "tail_handle_seconds": 0.55,
+      "waveform_search_seconds": 0.20,
+      "speech_protection_seconds": 0.05,
+      "quiet_threshold_dbfs": -38.0,
+      "description": "保留较充足呼吸和句间节奏"
+    },
+    "compact": {
+      "max_sentence_gap_frames": 15,
+      "join_handle_seconds": 0.20,
+      "tail_handle_seconds": 0.50,
+      "waveform_search_seconds": 0.16,
+      "speech_protection_seconds": 0.04,
+      "quiet_threshold_dbfs": -36.0,
+      "description": "自然紧凑，当前口播默认"
+    },
+    "energetic": {
+      "max_sentence_gap_frames": 15,
+      "join_handle_seconds": 0.12,
+      "tail_handle_seconds": 0.35,
+      "waveform_search_seconds": 0.12,
+      "speech_protection_seconds": 0.035,
+      "quiet_threshold_dbfs": -34.0,
+      "description": "强节奏，仅适合明确要求的短视频"
+    }
+  }
+}
